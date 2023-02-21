@@ -7,20 +7,19 @@
     margin: 0 auto;
     border-radius: 5px 5px 0px 0px;
     text-align: center;
-    background-color: #111111;
+    background-color: $bg-principal;
 
     .home__heading {
       padding: 5px;
       font-size: 2.4rem;
       letter-spacing: 2px;
-      color: whitesmoke;
+      color: $txt-principal;
     } // home__heading
     @include tablet {
       .home__heading {
         padding: 5px;
         font-size: 4rem;
         letter-spacing: 2px;
-        color: whitesmoke;
       }
     }
     @include desktop {
@@ -28,7 +27,6 @@
         padding: 5px;
         font-size: 4.4rem;
         letter-spacing: 0.1rem;
-        color: whitesmoke;
       }
     }
 
@@ -36,14 +34,13 @@
       padding: 5px;
       font-size: 1.8rem;
       letter-spacing: 0.1rem;
-      color: grey;
+      color: $txt-secundary;
     } // home__heading--h2
     @include desktop {
       .home__heading--h2 {
         padding: 5px;
         font-size: 2rem;
         letter-spacing: 0.1rem;
-        color: grey;
       }
     }
 
@@ -143,8 +140,8 @@
 
       .home__btn {
         padding: 1rem;
-        background-color: grey;
-        color: white;
+        background-color: $txt-secundary;
+        color: $txt-principal;
         border-radius: 5px;
         border: none;
         transition: background 0.3s ease-out;
@@ -154,11 +151,7 @@
         cursor: pointer;
 
         &:hover {
-          background: linear-gradient(
-            90.4deg,
-            rgb(32, 121, 128) 0.6%,
-            rgb(9, 145, 155) 90%
-          );
+          @extend %gradient;
         }
       }
     }
@@ -193,10 +186,6 @@
       margin: 0 auto;
       border-radius: 5px 5px 0px 0px;
       text-align: center;
-      background-color: #111111;
     }
   }
 } // home
-
-@media (min-width: 992px) {
-}

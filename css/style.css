@@ -48,6 +48,9 @@ body {
 .fa-location-dot {
   color: #fa593c; }
 
+.home .home__container .home__button .home__btn:hover {
+  background: linear-gradient(90.4deg, #207980 0.6%, #09919b 90%); }
+
 .header {
   width: 100%;
   padding: 2rem; }
@@ -119,25 +122,22 @@ body {
       .home .home__container .home__heading {
         padding: 5px;
         font-size: 4rem;
-        letter-spacing: 2px;
-        color: whitesmoke; } }
+        letter-spacing: 2px; } }
     @media (min-width: 992px) {
       .home .home__container .home__heading {
         padding: 5px;
         font-size: 4.4rem;
-        letter-spacing: 0.1rem;
-        color: whitesmoke; } }
+        letter-spacing: 0.1rem; } }
     .home .home__container .home__heading--h2 {
       padding: 5px;
       font-size: 1.8rem;
       letter-spacing: 0.1rem;
-      color: grey; }
+      color: gray; }
     @media (min-width: 992px) {
       .home .home__container .home__heading--h2 {
         padding: 5px;
         font-size: 2rem;
-        letter-spacing: 0.1rem;
-        color: grey; } }
+        letter-spacing: 0.1rem; } }
     .home .home__container .home__photo .home__img {
       margin-top: 10px;
       width: 20rem;
@@ -202,8 +202,8 @@ body {
       padding: 2.5rem; }
       .home .home__container .home__button .home__btn {
         padding: 1rem;
-        background-color: grey;
-        color: white;
+        background-color: gray;
+        color: whitesmoke;
         border-radius: 5px;
         border: none;
         transition: background 0.3s ease-out;
@@ -211,8 +211,6 @@ body {
         font-size: 1.4rem;
         letter-spacing: 0.1rem;
         cursor: pointer; }
-        .home .home__container .home__button .home__btn:hover {
-          background: linear-gradient(90.4deg, #207980 0.6%, #09919b 90%); }
     @media (min-width: 992px) {
       .home .home__container .home__button .home__btn {
         padding: 20px;
@@ -232,8 +230,7 @@ body {
       width: 90%;
       margin: 0 auto;
       border-radius: 5px 5px 0px 0px;
-      text-align: center;
-      background-color: #111111; } }
+      text-align: center; } }
 
 .about {
   width: 100%;
