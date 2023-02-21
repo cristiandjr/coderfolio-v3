@@ -100,9 +100,12 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
         gap: 15px;
         list-style: none;
-        cursor: pointer; } }
+        cursor: pointer; }
+        .header .header__container .header__links .header__link .header__btn {
+          padding: 2rem; } }
   @media (min-width: 768px) {
     .header .header__container {
       width: 90%;
