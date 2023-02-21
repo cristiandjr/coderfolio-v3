@@ -9,3 +9,8 @@
         @content;
     }
 }
+
+// GRID
+@mixin grid-columns($columns, $size) {
+    grid-template-columns: repeat($columns, $size);
+}

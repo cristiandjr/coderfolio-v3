@@ -8,28 +8,28 @@
     margin: 0 auto;
     border-radius: 5px 5px 0px 0px;
     text-align: start;
-    background-color: #111111;
+    background-color: $bg-principal;
 
     .works__heading {
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: left;
-      color: whitesmoke;
+      color: $txt-principal;
     } // works__heading
 
     .works__heading--h2 {
       margin-top: 20px;
       margin-bottom: 5px;
       text-align: left;
-      color: whitesmoke;
+      color: $txt-principal;
     } // works__heading--h2
 
     .works__heading--h3 {
-      color: whitesmoke;
+      color: $txt-principal;
     } // works__heading--h3
 
     .works__links {
-      color: grey;
+      color: $txt-secundary;
       text-decoration: none;
     } // works__links
 
@@ -37,13 +37,13 @@
       margin-top: 10px;
       margin-bottom: 10px;
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      @include grid-columns(1, 1fr);
       gap: 15px;
 
       .works__card {
         width: 100%;
         padding: 10px;
-        border: 1px solid grey;
+        border: 1px solid $txt-secundary;
         border-radius: 5px;
 
         .work__img {
@@ -57,7 +57,7 @@
         }
 
         .works__paragraph {
-          color: grey;
+          color: $txt-secundary;
         }
 
         .works__button {
@@ -66,11 +66,7 @@
           color: white;
           border-radius: 5px;
           border: none;
-          background: linear-gradient(
-            90.4deg,
-            rgb(32, 121, 128) 0.6%,
-            rgb(9, 145, 155) 90%
-          );
+          @extend %gradient; 
           transition: 0.3s ease;
           font-weight: bold;
           font-size: 14px;
@@ -78,23 +74,21 @@
           cursor: pointer;
         }
         .works__button:hover {
-          background: grey;
+          background: $txt-secundary;
         }
       }
     } // works__cards
     @include tablet {
       .works__cards {
         margin-top: 10px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        @include grid-columns(2, 1fr);
+
       }
     }
     @include desktop {
       .works__cards {
         margin-top: 10px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        @include grid-columns(3, 1fr);
       }
     }
   } // end works__container
@@ -105,7 +99,7 @@
       margin: 0 auto;
       border-radius: 5px 5px 0px 0px;
       text-align: start;
-      background-color: #111111;
+      background-color: $bg-principal;
     }
   }
 } // end

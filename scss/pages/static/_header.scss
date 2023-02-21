@@ -27,27 +27,23 @@
       .header__link {
         padding: 1rem;
         border-radius: 5px;
-        background-color: grey;
+        background-color: $txt-secundary;
         transition: 0.3s ease-out;
 
         &:hover {
-          background: linear-gradient(
-            90.4deg,
-            rgb(32, 121, 128) 0.6%,
-            rgb(9, 145, 155) 90%
-          );
+          @extend %gradient;
         }
 
         .header__btn {
           text-decoration: none;
-          color: white;
+          color: $txt-principal;
           font-size: 1.2rem;
           letter-spacing: 0.1rem;
         } // header__btn
       } // header__link
 
       .header__link--light {
-        color: whitesmoke;
+        color: $txt-principal;
         font-size: 3.4rem;
       } // header__link--light
     } // header__links

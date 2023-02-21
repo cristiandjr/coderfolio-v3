@@ -8,13 +8,13 @@
     margin: 0 auto;
     border-radius: 5px 5px 0px 0px;
     text-align: center;
-    background-color: #111111;
+    background-color: $bg-principal;
 
     .resume__heading {
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: left;
-      color: whitesmoke;
+      color: $txt-principal;
     } // end resume__heading
 
     @include desktop {
@@ -22,7 +22,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: left;
-        color: whitesmoke;
+        color: $txt-principal;
       }
     }
 
@@ -30,7 +30,7 @@
       margin-top: 20px;
       margin-bottom: 5px;
       text-align: left;
-      color: whitesmoke;
+      color: $txt-principal;
     } // end resume__heading--h2
 
     @include desktop {
@@ -38,32 +38,32 @@
         margin-top: 20px;
         margin-bottom: 5px;
         text-align: left;
-        color: whitesmoke;
+        color: $txt-principal;
       }
     }
 
     .resume__heading--h3 {
-      color: whitesmoke;
+      color: $txt-principal;
     } // end resume__heading--h3
 
     .resume__paragraph {
-      color: grey;
+      color: $txt-secundary;
     } // resume__paragraph
 
     .resume__content {
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      @include grid-columns(1, 1fr);
+
     }
     @include tablet {
       .resume__content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        @include grid-columns(2, 1fr);
+
       }
     }
     @include desktop {
       .resume__content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        @include grid-columns(3, 1fr);
       }
     }
 
@@ -74,10 +74,10 @@
       .resume__card {
         width: 100%;
         padding: 10px;
-        border: 1px solid grey;
+        border: 1px solid $txt-secundary;
         border-radius: 5px;
         .resume__paragraph--date {
-          color: grey;
+          color: $txt-secundary;
         }
       }
 
@@ -104,7 +104,7 @@
         .resume__card {
           width: 100%;
           padding: 10px;
-          border: 1px solid grey;
+          border: 1px solid $txt-secundary;
           border-radius: 5px;
 
           .resume__skills--icons {
@@ -127,13 +127,7 @@
       margin: 0 auto;
       border-radius: 5px 5px 0px 0px;
       text-align: center;
-      background-color: #111111;
+      background-color: $bg-principal;
     }
   }
 } // end resume
-@include desktop {
-  .resume {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
