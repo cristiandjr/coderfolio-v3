@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+
+  .footer__container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #302f2f;
+    padding: 5px;
+
+
+    .footer__copyright {
+      font-size: 12px;
+      font-weight: bold;
+      color: grey;
+    }
+
+  }
+
+  @include tablet {
+    .footer {
+      width: 100%;
+    }
+    .footer__container {
+      width: 90%;
+    }
+  }
+  @include desktop {
+    .footer {
+      width: 100%;
+    }
+    .footer__container {
+      width: 90%;
+    }
+  }
+
+}
+
+
+

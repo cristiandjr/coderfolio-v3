@@ -1,0 +1,18 @@
+
+// Base
+//@import "variables/variables";
+@import "base/global";
+@import "base/variables";
+@import "base/mixins";
+
+// Pages
+@import "pages/static/header";
+@import "pages/index";
+@import "pages/about";
+@import "pages/resume";
+@import "pages/works";
+@import "pages/contact";
+@import "pages/static/footer";
+
+
+

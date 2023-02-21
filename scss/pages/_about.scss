@@ -1,0 +1,165 @@
+.about {
+  width: 100%;
+  margin-top: 10px;
+
+  .about__container {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    background-color: #111111;
+
+    .about__heading {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: left;
+      color: whitesmoke;
+    } // end about__heading
+
+    .about__heading--h2 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      text-align: left;
+      color: whitesmoke;
+    } // end about__heading--h2
+
+    .about__heading--h3 {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 20px;
+      color: whitesmoke;
+    } // end about__heading--h3
+
+    .about__paragraph {
+      text-align: left;
+      color: grey;
+    } // end about__paragraph
+
+    .about__content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .about__photo {
+        .about__img {
+          width: 320px;
+          height: 250px;
+          border-radius: 5px;
+        }
+      } // end about__photo
+      @include tablet {
+        .about__photo {
+          .about__img {
+            width: 350px;
+            height: 320px;
+            display: block;
+            border-radius: 5px;
+          }
+        }
+      }
+      @include desktop {
+        .about__photo {
+          .about__img {
+            width: 350px;
+            height: 320px;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .about__text {
+        p {
+          text-align: left;
+          color: grey;
+        }
+      } // end about__text
+
+      .about__info {
+        margin-top: 10px;
+        .about__info--content {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-bottom: 10px;
+        }
+        @include tablet {
+          .about__info--content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 10px;
+          }
+        }
+        @include desktop {
+          .about__info--content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+          }
+        }
+        .about__info--content {
+          p {
+            font-size: 18px;
+          }
+        }
+      } // end about__info
+    } // end about__content
+    @include desktop {
+      .about__content {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+    }
+
+    .about__cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+
+      .about__card {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+
+        .about__card--icon {
+          font-size: 20px;
+        }
+        .about__card p {
+          color: grey;
+        }
+      }
+    } // end about__cards
+    @include tablet {
+      .about__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .about__card--icon {
+          font-size: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+    @include desktop {
+      .about__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  } // end about__container
+  @include tablet {
+    .about__container {
+      padding: 20px;
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 5px 5px 0px 0px;
+      text-align: center;
+      background-color: #111111;
+    }
+  }
+} // end about

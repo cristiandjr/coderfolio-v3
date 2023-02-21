@@ -1,0 +1,165 @@
+.home {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .home__container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    background-color: #111111;
+  }
+  .home__photo .home__img {
+    margin-top: 10px;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+  .home__heading {
+    padding: 5px;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    color: whitesmoke;
+  }
+  .home__greeting {
+    font-size: 2.5rem;
+    animation-name: greeting-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    z-index: -1;
+  }
+  @keyframes greeting-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .home__heading--h2 {
+    padding: 5px;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    color: grey;
+  }
+  .home__networks {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+  }
+  .home__button {
+    padding: 2.5rem;
+  }
+  .home__button .home__btn {
+    padding: 1rem;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s ease-out;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+  }
+  .home__button .home__btn:hover {
+    background: linear-gradient(
+      90.4deg,
+      rgb(32, 121, 128) 0.6%,
+      rgb(9, 145, 155) 90%
+    );
+  }
+  @media (min-width: 768px) {
+    .home__container {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 5px 5px 0px 0px;
+      text-align: center;
+      background-color: #111111;
+    }
+    .home__photo .home__img {
+      margin-top: 10px;
+      width: 22.3rem;
+      height: 22.3rem;
+      border-radius: 50%;
+    }
+    .home__heading {
+      padding: 5px;
+      font-size: 4rem;
+      letter-spacing: 2px;
+      color: whitesmoke;
+    }
+    .home__greeting {
+      font-size: 45px;
+    }
+  }
+  @media (min-width: 992px) {
+    .home__photo .home__img {
+      margin-top: 10px;
+      width: 22.5rem;
+      height: 22.5rem;
+      border-radius: 50%;
+    }
+    .home__heading {
+      padding: 5px;
+      font-size: 4.4rem;
+      letter-spacing: .1rem;
+      color: whitesmoke;
+    }
+    .home__greeting {
+      font-size: 6.5rem;
+    }
+    .home__heading--h2 {
+      padding: 5px;
+      font-size: 2rem;
+      letter-spacing: .1rem;
+      color: grey;
+    }
+    .home__networks {
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .home__button .home__btn {
+      padding: 20px;
+      background-color: grey;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      transition: 0.3s ease;
+      font-weight: bold;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+    .home__button .home__btn:hover {
+      background: linear-gradient(
+        90.4deg,
+        rgb(32, 121, 128) 0.6%,
+        rgb(9, 145, 155) 90%
+      );
+    }
+  }

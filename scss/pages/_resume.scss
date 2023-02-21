@@ -1,0 +1,143 @@
+.resume {
+  width: 100%;
+  margin-top: 10px;
+
+  .resume__container {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    background-color: #111111;
+
+    .resume__heading {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: left;
+      color: whitesmoke;
+    } // end resume__heading
+
+    @include desktop {
+      .resume__heading {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        color: whitesmoke;
+      }
+    }
+
+    .resume__heading--h2 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      text-align: left;
+      color: whitesmoke;
+    } // end resume__heading--h2
+
+    @include desktop {
+      .resume__heading--h2 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: whitesmoke;
+      }
+    }
+
+    .resume__heading--h3 {
+      color: whitesmoke;
+    } // end resume__heading--h3
+
+    .resume__paragraph {
+      color: grey;
+    } // resume__paragraph
+
+    .resume__content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include tablet {
+      .resume__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @include desktop {
+      .resume__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .resume__cards {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      .resume__card {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        .resume__paragraph--date {
+          color: grey;
+        }
+      }
+
+      .resume__skills--icons {
+        text-align: center;
+        font-size: 40px;
+      }
+      
+    } // resume__cards
+    @include tablet {
+      .resume__cards {
+        margin: 10px;
+
+        .resume__skills--icons {
+          text-align: center;
+        }
+      }
+    }
+    @include desktop {
+      .resume__cards {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .resume__card {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid grey;
+          border-radius: 5px;
+
+          .resume__skills--icons {
+            text-align: start;
+            font-size: 40px;
+          }
+        }
+      }
+
+
+    }
+
+  } //  end resume__container
+  @include tablet {
+    .resume__container {
+      width: 90%;
+    }
+  }
+  @include desktop {
+    .resume__container {
+      padding: 20px;
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 5px 5px 0px 0px;
+      text-align: center;
+      background-color: #111111;
+    }
+  }
+} // end resume
+@include desktop {
+  .resume {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
