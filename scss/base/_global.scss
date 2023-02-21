@@ -26,29 +26,29 @@ body {
 
 /* ===== colors icon  ===== */
 .fa-facebook {
-  color: #3b5998;
+  color: $fb-icon;
 }
 .fa-linkedin {
-  color: #0e76a8;
+  color: $li-icon;
 }
 .fa-youtube {
-  color: #c4302b;
+  color: $yt-icon;
 }
 .fa-envelope {
-  color: rgb(224, 224, 173);
+  color: $mail-icon;
 }
 .fa-html5 {
-  color: orangered;
+  color: $html-icon;
 }
 .fa-css3-alt {
-  color: #2d9fbd;
+  color: $css-icon;
 }
 .fa-js {
-  color: yellow;
+  color: $js-icon;
 }
 .fa-react {
-  color: #2d9fbd;
+  color: $react-icon;
 }
 .fa-location-dot {
-  color: tomato;
+  color: $geo-icon;
 }
