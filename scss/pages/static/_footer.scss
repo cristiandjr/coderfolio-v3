@@ -6,13 +6,13 @@
     height: auto;
     margin: 0 auto;
     text-align: center;
-    background-color: #302f2f;
+    background-color: $bg-secundary;
     padding: 5px;
 
     .footer__copyright {
       font-size: 12px;
       font-weight: bold;
-      color: grey;
+      color: $txt-secundary;
     }
   }
 
@@ -24,12 +24,5 @@
       width: 90%;
     }
   }
-  @include desktop {
-    .footer {
-      width: 100%;
-    }
-    .footer__container {
-      width: 90%;
-    }
-  }
+ 
 }

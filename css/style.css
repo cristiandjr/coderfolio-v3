@@ -541,13 +541,8 @@ body {
     .footer .footer__container .footer__copyright {
       font-size: 12px;
       font-weight: bold;
-      color: grey; }
+      color: gray; }
   @media (min-width: 768px) {
-    .footer .footer {
-      width: 100%; }
-    .footer .footer__container {
-      width: 90%; } }
-  @media (min-width: 992px) {
     .footer .footer {
       width: 100%; }
     .footer .footer__container {
