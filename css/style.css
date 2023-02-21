@@ -103,11 +103,6 @@ body {
         gap: 15px;
         list-style: none;
         cursor: pointer; } }
-    .header .header__container .ham-center {
-      margin: 0 auto; }
-    @media (min-width: 768px) {
-      .header .header__container .ham-center {
-        margin: 0; } }
   @media (min-width: 768px) {
     .header .header__container {
       width: 90%;

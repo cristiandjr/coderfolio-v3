@@ -57,15 +57,7 @@
         cursor: pointer;
       }
     }
-
-    .ham-center {
-      margin: 0 auto;
-    } // ham-center
-    @include tablet {
-      .ham-center {
-        margin: 0;
-      }
-    }
+   
   } // header__container
   @include tablet {
     .header__container {
