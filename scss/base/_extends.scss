@@ -1,3 +1,25 @@
 %gradient {
-    background: linear-gradient(90.4deg, rgb(32, 121, 128) 0.6%, rgb(9, 145, 155) 90%);
+  background: linear-gradient(
+    90.4deg,
+    rgb(32, 121, 128) 0.6%,
+    rgb(9, 145, 155) 90%
+  );
+}
+
+// btn
+%btn {
+  padding: 1rem;
+  background-color: $txt-secundary;
+  color: $txt-principal;
+  border-radius: 5px;
+  border: none;
+  transition: background 0.3s ease-out;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+  &:hover {
+    @extend %gradient;
+  }
 }

@@ -59,23 +59,11 @@
         .works__paragraph {
           color: $txt-secundary;
         }
-
         .works__button {
-          margin-top: 5px;
-          padding: 10px;
-          color: white;
-          border-radius: 5px;
-          border: none;
-          @extend %gradient; 
-          transition: 0.3s ease;
-          font-weight: bold;
-          font-size: 14px;
-          letter-spacing: 2px;
-          cursor: pointer;
+          width: 100%;
+          @extend %btn;
         }
-        .works__button:hover {
-          background: $txt-secundary;
-        }
+
       }
     } // works__cards
     @include tablet {

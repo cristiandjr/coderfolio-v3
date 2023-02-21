@@ -83,20 +83,7 @@
         }
         .contact__input--button {
           width: 100%;
-          height: 50px;
-          background-color: $txt-secundary;
-          color: white;
-          border-radius: 5px;
-          border: none;
-          transition: 0.3s ease;
-          font-weight: bold;
-          font-size: 18px;
-          letter-spacing: 2px;
-          cursor: pointer;
-
-          &:hover {
-            @extend %gradient;
-          }
+          @extend %btn;
         }
       }
     } // contact__forms
