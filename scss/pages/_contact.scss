@@ -1,93 +1,111 @@
 .contact {
-    width: 100%;
-    margin-top: 10px;
-  }
+  width: 100%;
+  margin-top: 10px;
+
   .contact__container {
     padding: 20px;
     width: 100%;
     margin: 0 auto;
     border-radius: 5px 5px 0px 0px;
     background-color: #111111;
-  }
-  .contact__heading {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    color: whitesmoke;
-  }
-  .contact__info {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact__heading--h2 {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: whitesmoke;
-  }
-  .contact__cards {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .contact__card {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid grey;
-    border-radius: 5px;
-  }
-  .contact__forms {
-    width: 100%;
-  }
-  .contact__form {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid grey;
-    border-radius: 5px;
-  }
-  .contact__networks {
-    font-size: 30px;
-  }
-  .contact__phone {
-    font-size: 20px;
-    color: grey;
-  }
-  .contact__mail {
-    font-size: 20px;
-    color: grey;
-  }
-  .contact__field {
-    margin-top: 10px;
-  }
-  .contact__input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-    outline: none;
-  }
-  .contact__input--button {
-    width: 100%;
-    height: 50px;
-    background-color: grey;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    transition: 0.3s ease;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 2px;
-    cursor: pointer;
-  }
-  .contact__input--button:hover {
-    background: linear-gradient(
-      90.4deg,
-      rgb(32, 121, 128) 0.6%,
-      rgb(9, 145, 155) 90%
-    );
-  }
-  
-  @media (min-width: 768px) {
+
+    .contact__heading {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: left;
+      color: whitesmoke;
+    } // contact__heading
+
+    .contact__heading--h2 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      text-align: left;
+      color: whitesmoke;
+    } // contact__heading--h2
+
+    .contact__info {
+      display: flex;
+      flex-direction: column;
+
+      .contact__cards {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .contact__card {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid grey;
+          border-radius: 5px;
+
+          .contact__networks {
+            font-size: 30px;
+          }
+
+          .contact__phone {
+            font-size: 20px;
+            color: grey;
+          }
+          .contact__mail {
+            font-size: 20px;
+            color: grey;
+          }
+        }
+      } // contact__cards
+    } // contact__info
+    @include desktop {
+      .contact__info {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+    }
+
+    .contact__forms {
+      width: 100%;
+
+      .contact__form {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+
+        .contact__field {
+          margin-top: 10px;
+        }
+
+        .contact__input {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 18px;
+          outline: none;
+        }
+        .contact__input--button {
+          width: 100%;
+          height: 50px;
+          background-color: grey;
+          color: white;
+          border-radius: 5px;
+          border: none;
+          transition: 0.3s ease;
+          font-weight: bold;
+          font-size: 18px;
+          letter-spacing: 2px;
+          cursor: pointer;
+
+          &:hover {
+            background: linear-gradient(
+              90.4deg,
+              rgb(32, 121, 128) 0.6%,
+              rgb(9, 145, 155) 90%
+            );
+          }
+        }
+      }
+    } // contact__forms
+  } // contact__container
+  @include tablet {
     .contact__container {
       padding: 20px;
       width: 90%;
@@ -96,10 +114,4 @@
       background-color: #111111;
     }
   }
-  @media (min-width: 992px) {
-    .contact__info {
-      display: flex;
-      flex-direction: row;
-      gap: 15px;
-    }
-  }
+} // contact
