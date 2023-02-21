@@ -17,14 +17,11 @@
     } // home__heading
     @include tablet {
       .home__heading {
-        padding: 5px;
         font-size: 4rem;
-        letter-spacing: 2px;
       }
     }
     @include desktop {
       .home__heading {
-        padding: 5px;
         font-size: 4.4rem;
         letter-spacing: 0.1rem;
       }
@@ -38,9 +35,7 @@
     } // home__heading--h2
     @include desktop {
       .home__heading--h2 {
-        padding: 5px;
         font-size: 2rem;
-        letter-spacing: 0.1rem;
       }
     }
 
@@ -55,20 +50,16 @@
     @include tablet {
       .home__photo {
         .home__img {
-          margin-top: 10px;
           width: 22.3rem;
           height: 22.3rem;
-          border-radius: 50%;
         }
       }
     }
     @include desktop {
       .home__photo {
         .home__img {
-          margin-top: 10px;
           width: 22.5rem;
           height: 22.5rem;
-          border-radius: 50%;
         }
       }
     }
@@ -128,9 +119,6 @@
     } // home__networks
     @include desktop {
       .home__networks {
-        padding: 5px;
-        display: flex;
-        justify-content: center;
         font-size: 4rem;
       }
     }
@@ -159,23 +147,7 @@
       .home__button {
         .home__btn {
           padding: 20px;
-          background-color: grey;
-          color: white;
-          border-radius: 5px;
-          border: none;
-          transition: 0.3s ease;
-          font-weight: bold;
-          font-size: 1.4rem;
           letter-spacing: 2px;
-          cursor: pointer;
-
-          &:hover {
-            background: linear-gradient(
-              90.4deg,
-              rgb(32, 121, 128) 0.6%,
-              rgb(9, 145, 155) 90%
-            );
-          }
         }
       }
     }
